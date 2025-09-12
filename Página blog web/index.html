@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="author" content="Disney Blog Fans">
+  <meta name="copyright" content="©️ 2025 Disney Orlando Blog">
+  <title>Disney Orlando Blog</title>
+
+  <!-- Fuentes y iconos -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald|Open+Sans|Pacifico">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<!-- Navbar con links -->
+<nav class="navbar">
+  <div class="social-icons">
+    <a href="https://www.facebook.com/disneyparks" target="_blank"><i class="fa fa-facebook-official"></i></a>
+    <a href="https://www.instagram.com/waltdisneyworld" target="_blank"><i class="fa fa-instagram"></i></a>
+    <a href="https://www.youtube.com/disneyparks" target="_blank"><i class="fa fa-youtube"></i></a>
+    <a href="https://twitter.com/disneyparks" target="_blank"><i class="fa fa-twitter"></i></a>
+  </div>
+  <a href="#" class="search"><i class="fa fa-search"></i></a>
+</nav>
+
+<!-- Header con carrusel -->
+<header class="hero">
+  <div class="hero-carousel">
+    <div class="slide active">
+      <img src="img/foto5.jpg" alt="Magic Kingdom">
+      <div class="hero-content">
+        <h1>Disney Orlando</h1>
+        <h6>La magia comienza aquí ✨</h6>
+        <button onclick="toggleModal('contacto')">CONTACTO</button>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/foto3.jpg" alt="Epcot">
+      <div class="hero-content">
+        <h1>Epcot</h1>
+        <h6>Un viaje por el futuro y la cultura</h6>
+      </div>
+    </div>
+
+    <div class="slide">
+      <img src="img/foto2.jpg" alt="Animal Kingdom">
+      <div class="hero-content">
+        <h1>Animal Kingdom</h1>
+        <h6>Donde la naturaleza cobra vida 🌿</h6>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- Contenido principal -->
+<main class="content">
+  <!-- Blog -->
+  <section class="blog">
+    <article>
+      <h3>Consejos para tu visita a Magic Kingdom</h3>
+      <h5>Guía práctica <span>Septiembre 12, 2025</span></h5>
+      <img src="img/foto1.jpg" alt="Castillo de Disney">
+      <p>El icónico Castillo de Cenicienta es el corazón del parque. Descubre las mejores atracciones, tips para evitar filas y dónde ver los fuegos artificiales.</p>
+      <div class="actions">
+        <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+        <button onclick="toggleComments('coment1')">Comentarios <span>1</span></button>
+      </div>
+      <div id="coment1" class="comments">
+        <p>Ana: ¡El show nocturno es imperdible! 🎆</p>
+      </div>
+    </article>
+
+    <article>
+      <h3>Comida mágica en Epcot</h3>
+      <h5>Experiencias únicas <span>Septiembre 5, 2025</span></h5>
+      <img src="img/epcot.jpg" alt="Epcot Comida">
+      <p>Explora el famoso Food & Wine Festival y prueba platillos del mundo sin salir de Orlando. Un recorrido gastronómico para toda la familia.</p>
+      <div class="actions">
+        <button onclick="likeFunction(this)"><i class="fa fa-thumbs-up"></i> Me gusta</button>
+        <button onclick="toggleComments('coment2')">Comentarios <span>2</span></button>
+      </div>
+      <div id="coment2" class="comments">
+        <p>Laura: ¡Me encantan los postres temáticos! 🍰</p>
+        <p>Carlos: Una experiencia inolvidable.</p>
+      </div>
+    </article>
+  </section>
+
+  <!-- Sidebar -->
+  <aside class="sidebar">
+    <div class="card">
+      <img src="img/foto6.jpg" alt="Blogger Disney">
+      <h4>Disney Blogger</h4>
+      <p>Amante de la magia, los parques y todo lo relacionado con Disney. Aquí comparto experiencias, tips y guías para tu viaje soñado.</p>
+    </div>
+
+    <div class="card">
+      <h4>Suscríbete</h4>
+      <input type="email" placeholder="Ingresa tu correo">
+      <button onclick="toggleModal('contacto')">Suscribirme</button>
+    </div>
+  </aside>
+</main>
+
+<!-- Modal -->
+<div id="contacto" class="modal">
+  <div class="modal-content">
+    <span class="close" onclick="toggleModal('contacto')">&times;</span>
+    <h2>Contáctame</h2>
+    <input type="email" placeholder="Ingresa tu correo">
+    <button onclick="toggleModal('contacto')">Enviar</button>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <button onclick="scrollToTop()"><i class="fa fa-arrow-up"></i> Subir</button>
+  <p>©️ 2025 Disney Orlando Blog | Creado con magia ✨</p>
+</footer>
+
+<!-- JS -->
+<script src="js/script.js"></script>
+</body>
+</html>
